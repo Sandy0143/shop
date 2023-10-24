@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width-device-width", iniatail-scale="1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+    <div class="conatiner">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="125px">
+        </div>
+        <nav>
+            <ul id="menuitems">
+                <li> <a href="">Home</a></li>
+                <li> <a href="">Prducts</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="">Contact</a></li>
+                <li> <a href="">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Give Your Workout <br>A New Style!</h1>
+            <p>Sucess isn't always about greatness. It's about consistency. Consistent <br>hard work gains sucess. Greatness will come. </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="images/image1.png" >
+        </div>
+    </div>
+    </div>  
+    </div>
+<!---Featured catagories-->
+    <div class="categories">
+        <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/category-1.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/category-2.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/category-3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--featured products-->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$150.00</p>
+                <button class="add-to-cart" data-product="Red Printed T-Shirt" data-price="150">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4>Sports Shoes</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$50.00</p>
+                <button class="add-to-cart" data-product="Sports Shoes" data-price="50">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4>Track Pant</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$350.00</p>
+                <button class="add-to-cart" data-product="Track Pant" data-price="350">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4>Puma T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$100.00</p>
+                <button class="add-to-cart" data-product="Puma T-Shirt" data-price="100">Add to Cart</button>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg">
+                <h4>White Shoes</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$500.00</p>
+                <button class="add-to-cart" data-product="White Shoes" data-price="500">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4>Puma T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$450.00</p>
+                <button class="add-to-cart" data-product="Puma T-Shirt" data-price="450">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg">
+                <h4>HRX Socks</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$75.00</p>
+                <button class="add-to-cart" data-product="HRX Socks" data-price="75">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg">
+                <h4>Fossil Watch</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$80.00</p>
+                <button class="add-to-cart" data-product="Fossil Watch" data-price="80">Add to Cart</button>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-9.jpg">
+                    <h4>Black Watch</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                    <button class="add-to-cart" data-product="Black Watch" data-price="50">Add to Cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-10.jpg">
+                    <h4>Sparx Shoes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>$950.00</p>
+                    <button class="add-to-cart" data-product="Sparx Shoes" data-price="950">Add to Cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-11.jpg">
+                    <h4>Stylish Shoes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$520.00</p>
+                    <button class="add-to-cart" data-product="Stylish Shoes" data-price="520">Add to Cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-12.jpg">
+                    <h4>Black Track Pant</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$150.00</p>
+                    <button class="add-to-cart" data-product="Product 2" data-price="150">Add to Cart</button>
+                </div>
+    </div>
+<!--Offer-->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Availabel on RedStore</p>
+                    <h1>Smart Band 4</h1>
+                    <small>The Mi Smart Band 4 features a 39.9% larger
+                    (than Mi Band 3) AMOLED color full-touch display with 
+                    adjustable brightness, so everything is clear as can
+                    be.
+                    </small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--cart-->
+    <aside class="cart">
+        <br>
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <a href="payment.html" class="pay">Payment Section  &#8594;</a>
+    </aside>
+        <!--testimonial-->
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur rem dicta temporibus id quasi, aperiam minima! Voluptates ex facere ad sint, vero sapiente doloribus illo, ab veritatis earum tempora sed.</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <img src="images/user-1.png" alt="">
+                        <h3>Scan Parker</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur rem dicta temporibus id quasi, aperiam minima! Voluptates ex facere ad sint, vero sapiente doloribus illo, ab veritatis earum tempora sed.</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <img src="images/user-2.png" alt="">
+                        <h3>Bruno Farnandez</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur rem dicta temporibus id quasi, aperiam minima! Voluptates ex facere ad sint, vero sapiente doloribus illo, ab veritatis earum tempora sed.</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="images/user-3.png" alt="">
+                        <h3>Mikel Jackson</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--brands-->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/logo-godrej.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-oppo.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-coca-cola.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-paypal.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-philips.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>\
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and 
+                    Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Easy TUtorials</p>
+        </div>
+    </div>
+    
+    <!--js for toggel-->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight = "200px"
+            }
+            else{
+                menuitems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+<script src="cart.js"></script>
+</html>
